@@ -1,0 +1,83 @@
+ .header {
+
+    nav{
+        padding: 1.0625rem  1.5rem;
+    }
+
+    &__logo{
+        width: 8.8125rem;
+        height: 1.374rem;
+    }
+
+    &__menu{  // Mobile Menu
+
+        span {
+            display: block ;
+            width: 1.625rem;
+            height: 0.1rem;
+            background-color: $DarkBlue;
+            transition: all 300ms ease-in-out;
+
+            &:not(:last-child) {
+                margin-bottom: 0.1875rem;
+            }
+
+            // &:hover {
+            //     span:first-child {
+            //         transform: rotate(45deg);
+            //     }
+    
+            //     span:nth-child(2) {
+            //         opacity: 0;
+            //     }
+    
+            //     span:last-chil {
+            //         transform: rotate(45deg);
+            //     }
+            // }
+
+        }
+
+
+
+
+    }
+
+    &__links {
+        
+        a {
+            position: relative;
+            font-size: $font-sm;
+            color: $GrayishBlue;
+            transition: color 300ms ease-in-out;
+
+           &:not(last-child){
+               margin-right: 2rem;
+           }
+
+           &::before{
+            content: "";
+            display: block;
+            position: absolute;
+            height: 0.2rem;
+            left: 0rem;
+            bottom: -1.875rem;
+            right: 0rem;
+            background: linear-gradient(to right, $LimeGreen, $BrightCyan);
+            opacity: 0;
+            transition: opacity 300ms ease-in-out;
+           }
+                       
+           &:hover {
+            color: $DarkBlue;
+
+            &::before{
+                opacity: 0.75;
+              }
+            }
+        }
+
+        // header__links a:not(last-child)
+
+    }
+ }

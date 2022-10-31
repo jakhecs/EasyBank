@@ -2,7 +2,7 @@
     @include breakpoint-up(large) {
         display: flex;
         align-items: center;
-        // background-color: $VeryLightGray;
+        background-color: $VeryLightGray;
     }
     
     &__image {
